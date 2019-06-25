@@ -1,0 +1,19 @@
+{
+  "name": "mcore",
+  "version": "0.0.1",
+  "description": "Core Javascript logic (FE, BE, and Shared)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christopherbm/mcore.git"
+  },
+  "author": "Chris Myers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christopherbm/mcore/issues"
+  },
+  "homepage": "https://github.com/christopherbm/mcore#readme"
+}
