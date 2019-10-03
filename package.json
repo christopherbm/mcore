@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/christopherbm/mcore/issues"
   },
-  "homepage": "https://github.com/christopherbm/mcore#readme"
+  "homepage": "https://github.com/christopherbm/mcore#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
 }
