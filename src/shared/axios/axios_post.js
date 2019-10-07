@@ -20,7 +20,7 @@ module.exports = function (options)
       .catch(
         (err) => 
         {
-          if (is_monad(resp)) return err;
+          if (is_monad(err)) return err;
           return result_err(err);
         });
   }
