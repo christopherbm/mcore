@@ -8,21 +8,29 @@ module.exports = function (options)
 
   /*
   */
-  function axios_post (url, data) 
+  function axios_post (url, data, options) 
   {
-    return axios.post(url, data)
-      .then(
-        (resp) => 
-        {
-          if (is_monad(resp)) return resp;
-          return result_ok(resp);
-        })
-      .catch(
-        (err) => 
-        {
-          if (is_monad(err)) return err;
-          return result_err(err);
-        });
+    if (options === undefined) options = {};
+
+    return axios(
+    {
+      method: "post",
+      url: url,
+      withCredentials: false,
+      data: data
+    })
+    .then(
+      (resp) => 
+      {
+        if (is_monad(resp)) return resp;
+        return result_ok(resp);
+      })
+    .catch(
+      (err) => 
+      {
+        if (is_monad(err)) return err;
+        return result_err(err);
+      });
   }
 
   return axios_post;
